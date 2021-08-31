@@ -28,3 +28,5 @@ Método de pago atributos, tipo de tarjeta, efectivo.
 
 Todavía falta mucho para definir, nos haremos a la idea de estudiar el área de ventas y consejos recibidos.
 
+
+
