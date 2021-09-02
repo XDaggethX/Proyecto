@@ -3,30 +3,42 @@ Oscar Andres Moreno Coronado 1488970
 David Rey Gomez Garza 1908925
 Alef Benyamin Passos Silveira 1909332
 
-La empresa de comida rápida McDonald’s está interesada en ofrecerle a los clientes que desean adquirir una franquicia la opción de poder vender en línea sin la ayuda de terceros (aplicaciones de comida), lo atractivo de la propuesta es que no les cobraría comisiones o una renta anual, estaría incluida la aplicación en la adquisición de una franquicia.
+# Plantamiento del problema
 
-Nos encargaremos que los usuarios se registren para poder ordenar del menú tradicional de McDonald’s, incluiremos promociones así como el atractivo para los clientes que será la recompensa de puntos por cada compra, los puntos podrán ser canjeados por productos validos.
 
-Lo que debe incluir la aplicación es una cuenta del cliente que desea comprar, para lo cual se le solicitará los datos personales (dirección, teléfono, correo electrónico, nombre), el menú el cual tendrá sus variantes como tipo de hamburguesa (pollo, carne, doble, BBQ, etc.,), postres, complementos, cajita feliz, desayuno y otras cosas que quizás olvidemos por ahora.
+El dueño de una tienda de nombre Donkey's Place especialista en la venta de burritos, esta interesado en dar a conocer su menú al publico por medio de una aplicación. quiere que el publico pueda ver su variedad de alimentos (burritos, postre, complementos, bebidas) ademas del precio, promociones y comidas especiales inspiradas en la temática del mes.
 
-Tenemos que pensar en la venta de la comida, los clientes tienen libertad de comprar usando el método de pago que mas le convengan, el cual podría ser tarjeta, efectivo y puntos.
-Un añadido que pensamos es que en la compra de cualquier comida esta otorgue puntos, los cuales pueden ser utilizados para canjear por comida.
+El restaurante tiene varias sucursales en el país, ubicados estratégicamente para que todas las sucursales vendan el mismo menú al mismo precio.
 
-Hay otra variante que puede ser implementadas como monto mínimo.
 
-Por ahora es lo que hemos pensado, se podría implantar más cosas, pero eso dependerá.
+## Objetivo
+Nos encargaremos que la aplicación pueda mostrar el menú y todo lo especificado por el cliente (el dueño), para que el publico este al día del precio, especiales del mes y promociones.
 
-En resumen, las clases serian, cuenta, menú, venta.
+## Sobre la aplicación
 
-En cuenta los atributos seria dirección, teléfono, correo electrónico, nombre, celular.
+La aplicación deberá ser capaz de desplegar una interfaz amigable y fácil de entender para que los clientes interactúen con ella, puedan navegar entre las diferentes opciones y puedan ver con claridad la opción que mas les guste. 
 
-En menú los atributos serian nombre, precio, cantidad.
+El *menu* de la aplicación deberá mostrar las opciones:
 
-En venta seria total sin descuento, total con puntos canjeados, puntos.
+ 1.  **Comida** que se divide en burritos, complementos, postres , la comida temática y sus respectivos precios 
+ 2. **Promociones** mostrara las ofertas del mes
+ 
 
-Método de pago atributos, tipo de tarjeta, efectivo.
+## Propuesta técnica
 
-Todavía falta mucho para definir, nos haremos a la idea de estudiar el área de ventas y consejos recibidos.
+Vamos a describir las clases y atributos que utilizaremos
+|Clase| Atributos| Descripción|
+|--|--|--| 
+| **Administrador** | Modificar el menú| Se encarga de cambiar un tipo de dato que este mal colocado o simplemente quiera hacer una mejora
+| | Agregar Productos| Es necesario que podamos agregar la comida de temporada |
+| | Borrar Productos| Eliminar elemento obsoletos y promociones caducadas|
+|| Ver menú|El administrador debe tener la opción de ver el menú
+ **Guest** | Ver menú|El publico solo tiene la opción de ver el menú
+ |-|-|-
+ |**Menú**| Nombre| El nombre por el cual se identifica el producto|
+ ||Grupo|Se divide en comida, promociones, comida de temporada|
+ ||Subgrupo| La comida se divide en postres, bebidas y platillos|
+ ||Precio|El precio que cuesta cada producto, la promoción vigente y comida de temporada|
 
 ![image](https://user-images.githubusercontent.com/88564305/131584175-a0f036d5-a023-4268-a63d-43ccc102fa53.png)
 
