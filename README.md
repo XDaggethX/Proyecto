@@ -42,6 +42,4 @@ Vamos a describir las clases y atributos que utilizaremos
  ||Subgrupo| |La comida se divide en postres, bebidas y platillos|
  ||Precio||El precio que cuesta cada producto, la promoción vigente y comida de temporada|
 
-![image](https://user-images.githubusercontent.com/88564305/131584175-a0f036d5-a023-4268-a63d-43ccc102fa53.png)
-
-
+![image](https://user-images.githubusercontent.com/88564305/131932142-73565699-64f3-41d8-9b26-a34b804b3692.png)
