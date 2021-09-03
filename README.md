@@ -23,22 +23,24 @@ El *menu* de la aplicación deberá mostrar las opciones:
  1.  **Comida** que se divide en burritos, complementos, postres , la comida temática y sus respectivos precios 
  2. **Promociones** mostrara las ofertas del mes
  
-
+ 
 ## Propuesta técnica
 
 Vamos a describir las clases y atributos que utilizaremos
-|Clase| Atributos| Descripción|
-|--|--|--| 
-| **Administrador** | Modificar el menú| Se encarga de cambiar un tipo de dato que este mal colocado o simplemente quiera hacer una mejora
-| | Agregar Productos| Es necesario que podamos agregar la comida de temporada |
-| | Borrar Productos| Eliminar elemento obsoletos y promociones caducadas|
-|| Ver menú|El administrador debe tener la opción de ver el menú
- **Guest** | Ver menú|El publico solo tiene la opción de ver el menú
+|Clase| Atributos| Métodos|Descripción|
+|--|--|--|--|
+| **Administrador** |Nombre||Nombre del administrador
+||Identificación||Identificación del administrador|
+|||Modificar el menú| Se encarga de cambiar un tipo de dato que este mal colocado o simplemente quiera hacer una mejora|
+|| | Agregar Productos| Es necesario que podamos agregar la comida de temporada |
+|| | Borrar Productos| Eliminar elemento obsoletos y promociones caducadas|
+||| Ver menú|El administrador debe tener la opción de ver el menú
+ **Guest** || Ver menú|El publico solo tiene la opción de ver el menú
  |-|-|-
- |**Menú**| Nombre| El nombre por el cual se identifica el producto|
- ||Grupo|Se divide en comida, promociones, comida de temporada|
- ||Subgrupo| La comida se divide en postres, bebidas y platillos|
- ||Precio|El precio que cuesta cada producto, la promoción vigente y comida de temporada|
+ |**Menú**| Nombre| |El nombre por el cual se identifica el producto|
+ ||Grupo||Se divide en comida, promociones, comida de temporada|
+ ||Subgrupo| |La comida se divide en postres, bebidas y platillos|
+ ||Precio||El precio que cuesta cada producto, la promoción vigente y comida de temporada|
 
 ![image](https://user-images.githubusercontent.com/88564305/131584175-a0f036d5-a023-4268-a63d-43ccc102fa53.png)
 
